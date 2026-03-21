@@ -171,7 +171,7 @@ texture = ExtResource("5_5v1tr")
 8:6/size_in_atlas = Vector2i(2, 3)
 8:6/0 = 0
 8:6/0/y_sort_origin = 12
-8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.233551, 16.087505, 1.4111862, 16.651978, 2.5401344, 20.038822, -4.233551, 19.474346)
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.8946686, 14.0197525, 6.213299, 14.657017, 5.5760384, 20.710999, -5.257408, 20.073738)
 10:7/size_in_atlas = Vector2i(2, 2)
 10:7/0 = 0
 10:7/0/y_sort_origin = 5
@@ -181,8 +181,14 @@ texture = ExtResource("5_5v1tr")
 10:0/0 = 0
 11:0/0 = 0
 5:0/0 = 0
+5:0/0/y_sort_origin = 3
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.257408, 0.31863022, 4.938778, 0.31863022, 4.6201477, 5.4167213, -4.938776, 5.4167213)
 0:0/0 = 0
+0:0/0/y_sort_origin = 3
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.257408, 0.31863022, 4.938778, 0.31863022, 0.15931702, 4.779461)
 0:1/0 = 0
+0:1/0/y_sort_origin = 3
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.63726044, 4.6201477, 0.95589066, 3.9828835, 8, -4.3015156, 5.098091)
 
 [sub_resource type="TileSet" id="TileSet_k7acu"]
 physics_layer_0/collision_layer = 1
