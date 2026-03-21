@@ -428,3 +428,6 @@ offset = Vector2(0, -15)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1942589679]
 position = Vector2(0, -3)
 shape = SubResource("CircleShape2D_cvnsp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=755205093]
+zoom = Vector2(1.5, 1.5)

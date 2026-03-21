@@ -130,9 +130,9 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_scl1n"]
-radius = 56.008926
+radius = 155.20631
 
-[node name="Enemy" type="CharacterBody2D" unique_id=818919443]
+[node name="Enemy" type="CharacterBody2D" unique_id=818919443 groups=["Enemies"]]
 script = ExtResource("1_1f0kj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282921378]
@@ -147,7 +147,6 @@ offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="AnimatedSprite2D" unique_id=278222233]
 collision_layer = 2
-collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/detection_area" unique_id=1221651802]
 shape = SubResource("CircleShape2D_scl1n")
