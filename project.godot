@@ -19,6 +19,17 @@ run/main_scene="uid://bmb2l4vrqswib"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 
+[global_group]
+
+Player=""
+Enemies=""
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="Environment"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
