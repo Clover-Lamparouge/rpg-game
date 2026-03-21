@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b1s8ul5s36ue4" path="res://Assets/tilesets/grass.png" id="2_5ukr8"]
 [ext_resource type="PackedScene" uid="uid://cqbghkdag6ipk" path="res://Scenes/player.tscn" id="4_8j60k"]
 [ext_resource type="Texture2D" uid="uid://bbfkdr22j5ql1" path="res://Assets/objects/objects.png" id="5_5v1tr"]
-[ext_resource type="PackedScene" uid="uid://bebyqyspcjv3g" path="res://Scenes/enemy.tscn" id="5_fo5ed"]
+[ext_resource type="PackedScene" uid="uid://bgavqrbrjkh2s" path="res://Scenes/enemy.tscn" id="5_fo5ed"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0fj1v"]
 texture = ExtResource("1_fo5ed")

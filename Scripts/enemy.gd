@@ -8,6 +8,7 @@ func _physics_process(delta: float) -> void:
 	if player_chase:
 		position += (player.position - position) / speed
 		$AnimatedSprite2D.play("walk")
+		move_and_collide(Vector2(0, 0))
 	else:
 		$AnimatedSprite2D.play("idle")
 
