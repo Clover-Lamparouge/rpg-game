@@ -1,6 +1,5 @@
-[gd_scene load_steps=22 format=3 uid="uid://c4b4xowjehw6g"]
+[gd_scene format=3 uid="uid://c4b4xowjehw6g"]
 
-[ext_resource type="Script" uid="uid://m4fgc3eit57d" path="res://Scripts/enemy.gd" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://b0cv08y3tbcce" path="res://Assets/characters/slime.png" id="1_hghv2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1f0kj"]
@@ -139,21 +138,20 @@ radius = 72.33948
 [sub_resource type="CircleShape2D" id="CircleShape2D_hghv2"]
 radius = 6.0827627
 
-[node name="Enemy" type="CharacterBody2D"]
-script = ExtResource("1_1f0kj")
+[node name="Enemy" type="CharacterBody2D" unique_id=89122111]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=914782618]
 sprite_frames = SubResource("SpriteFrames_scl1n")
 animation = &"idle"
 
-[node name="detection_area" type="Area2D" parent="."]
+[node name="detection_area" type="Area2D" parent="." unique_id=2104445573]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area" unique_id=153916321]
 shape = SubResource("CircleShape2D_dhkrs")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1507805826]
 z_index = -8
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_hghv2")
