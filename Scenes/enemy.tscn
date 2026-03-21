@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://dkntoqsik217y" path="res://Scripts/enemy.gd" id="1_1f0kj"]
 [ext_resource type="Texture2D" uid="uid://b0cv08y3tbcce" path="res://Assets/characters/slime.png" id="1_hghv2"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_dhkrs"]
+radius = 5.0990195
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_1f0kj"]
 atlas = ExtResource("1_hghv2")
 region = Rect2(0, 384, 32, 32)
@@ -129,11 +132,12 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_scl1n"]
 radius = 56.008926
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_dhkrs"]
-radius = 5.0990195
-
 [node name="Enemy" type="CharacterBody2D" unique_id=818919443]
 script = ExtResource("1_1f0kj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282921378]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_dhkrs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=809009704]
 sprite_frames = SubResource("SpriteFrames_tk7xo")
@@ -147,10 +151,6 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/detection_area" unique_id=1221651802]
 shape = SubResource("CircleShape2D_scl1n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282921378]
-position = Vector2(0, 1)
-shape = SubResource("CircleShape2D_dhkrs")
 
 [connection signal="body_entered" from="AnimatedSprite2D/detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="AnimatedSprite2D/detection_area" to="." method="_on_detection_area_body_exited"]
